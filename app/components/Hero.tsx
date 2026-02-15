@@ -13,12 +13,12 @@ export default function Hero() {
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <p className="text-amber-400/90 text-sm font-medium uppercase tracking-[0.3em] mb-6">
-          Ruge Digital Agency
+          Digital Agency
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
           Hacemos que tu marca{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
-            ruja
+            crezca
           </span>
         </h1>
         <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
