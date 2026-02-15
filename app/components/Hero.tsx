@@ -18,7 +18,7 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
           Hacemos que tu marca{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
-            crezca
+            crezca mas rapido
           </span>
         </h1>
         <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
