@@ -56,10 +56,10 @@ export default function Contact() {
             </div>
             <h3 className="font-semibold text-slate-900 mb-2">Teléfono</h3>
             <a
-              href="tel:+513138541255"
+              href="tel: 3138541255"
               className="text-slate-600 hover:text-amber-500 transition-colors"
             >
-              +51 3138541255
+               3138541255
             </a>
             <a
               href="https://wa.me/513138541255"
