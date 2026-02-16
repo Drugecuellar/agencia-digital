@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import PlanCard from "./PlanCard";
+import PlanPurchaseModal, { type PlanInfo } from "./PlanPurchaseModal";
 
 const webPlans = [
   { name: "Landing Page", price: "299", description: "Ideal para promociones o lanzamientos", features: ["Hasta 5 secciones", "Diseño responsive", "Formulario de contacto", "Optimización SEO básica"], highlighted: false },
@@ -13,6 +17,8 @@ const socialPlans = [
 ];
 
 export default function Pricing() {
+  const [selectedPlan, setSelectedPlan] = useState<PlanInfo | null>(null);
+
   return (
     <section id="planes" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -24,17 +30,31 @@ export default function Pricing() {
         <div className="mb-20">
           <h3 className="text-2xl font-semibold text-slate-900 mb-8 text-center">Páginas Web</h3>
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
-            {webPlans.map((plan, index) => <PlanCard key={index} {...plan} />)}
+            {webPlans.map((plan, index) => (
+              <PlanCard
+                key={index}
+                {...plan}
+                onSelectPlan={() => setSelectedPlan({ name: plan.name, price: plan.price, description: plan.description })}
+              />
+            ))}
           </div>
         </div>
 
         <div>
           <h3 className="text-2xl font-semibold text-slate-900 mb-8 text-center">Redes Sociales</h3>
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
-            {socialPlans.map((plan, index) => <PlanCard key={index} {...plan} />)}
+            {socialPlans.map((plan, index) => (
+              <PlanCard
+                key={index}
+                {...plan}
+                onSelectPlan={() => setSelectedPlan({ name: plan.name, price: plan.price, description: plan.description })}
+              />
+            ))}
           </div>
         </div>
       </div>
+
+      <PlanPurchaseModal plan={selectedPlan} onClose={() => setSelectedPlan(null)} />
     </section>
   );
 }

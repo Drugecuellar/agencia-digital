@@ -1,3 +1,5 @@
+import { WHATSAPP_URL } from "@/lib/constants";
+
 export default function Contact() {
   return (
     <section id="contacto" className="py-24 bg-white">
@@ -56,16 +58,16 @@ export default function Contact() {
             </div>
             <h3 className="font-semibold text-slate-900 mb-2">Teléfono</h3>
             <a
-              href="tel: 3138541255"
+              href="tel:+573138541255"
               className="text-slate-600 hover:text-amber-500 transition-colors"
             >
-               3138541255
+              +57 313 854 1255
             </a>
             <a
-              href="https://wa.me/513138541255"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-flex items-center justify-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
+              className="mt-3 inline-flex items-center justify-center gap-2 px-5 py-3 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <svg
                 className="w-5 h-5"

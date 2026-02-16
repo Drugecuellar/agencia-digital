@@ -2,7 +2,9 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Pricing from "./components/Pricing";
 import WhyUs from "./components/WhyUs";
+import Comparison from "./components/Comparison";
 import Contact from "./components/Contact";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -11,7 +13,9 @@ export default function Home() {
       <Services />
       <Pricing />
       <WhyUs />
+      <Comparison />
       <Contact />
+      <WhatsAppButton />
     </main>
   );
 }

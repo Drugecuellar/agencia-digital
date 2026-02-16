@@ -1,15 +1,14 @@
-import Link from "next/link";
-
 type PlanCardProps = {
   name: string;
   price: string;
   description: string;
   features: string[];
   highlighted: boolean;
+  onSelectPlan?: () => void;
 };
 
 export default function PlanCard(props: PlanCardProps) {
-  const { name, price, description, features, highlighted } = props;
+  const { name, price, description, features, highlighted, onSelectPlan } = props;
   return (
     <article
       className={
@@ -49,8 +48,9 @@ export default function PlanCard(props: PlanCardProps) {
           </li>
         ))}
       </ul>
-      <Link
-        href="#contacto"
+      <button
+        type="button"
+        onClick={onSelectPlan ?? (() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" }))}
         className={
           highlighted
             ? "block w-full py-3 text-center font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 transition-all duration-300"
@@ -58,7 +58,7 @@ export default function PlanCard(props: PlanCardProps) {
         }
       >
         Elegir plan
-      </Link>
+      </button>
     </article>
   );
 }
