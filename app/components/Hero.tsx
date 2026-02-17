@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[85vh] flex flex-col justify-center items-center overflow-hidden bg-[#0c1929]">
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <p className="text-sky-300/90 text-sm font-medium uppercase tracking-[0.2em] mb-6">
+        <p className="text-yellow-400 text-sm font-medium uppercase tracking-[0.2em] mb-6">
           Sitios web
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-red-800 mb-6 leading-[1.1] tracking-tight">
