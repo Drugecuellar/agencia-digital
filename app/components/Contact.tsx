@@ -16,7 +16,7 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-3 gap-10 text-center">
           <div>
-            <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-amber-100 text-amber-600">
+            <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-slate-100 text-slate-700">
               <svg
                 className="w-7 h-7"
                 fill="none"
@@ -34,14 +34,14 @@ export default function Contact() {
             <h3 className="font-semibold text-slate-900 mb-2">Email</h3>
             <a
               href="mailto:agenciadigital@gmail.com"
-              className="text-slate-600 hover:text-amber-500 transition-colors"
+              className="text-slate-600 hover:text-slate-900 transition-colors"
             >
               agenciadigital@gmail.com
             </a>
           </div>
 
           <div>
-            <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-amber-100 text-amber-600">
+            <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-slate-100 text-slate-700">
               <svg
                 className="w-7 h-7"
                 fill="none"
@@ -59,7 +59,7 @@ export default function Contact() {
             <h3 className="font-semibold text-slate-900 mb-2">Teléfono</h3>
             <a
               href="tel:+573138541255"
-              className="text-slate-600 hover:text-amber-500 transition-colors"
+              className="text-slate-600 hover:text-slate-900 transition-colors"
             >
               +57 313 854 1255
             </a>
@@ -81,7 +81,7 @@ export default function Contact() {
           </div>
 
           <div>
-            <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-amber-100 text-amber-600">
+            <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-slate-100 text-slate-700">
               <svg
                 className="w-7 h-7"
                 fill="none"

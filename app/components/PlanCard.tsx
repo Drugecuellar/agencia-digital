@@ -13,12 +13,12 @@ export default function PlanCard(props: PlanCardProps) {
     <article
       className={
         highlighted
-          ? "relative p-8 rounded-2xl border-2 border-amber-500 bg-amber-50/50 shadow-xl shadow-amber-500/10 md:scale-105 z-10 transition-all duration-300"
-          : "relative p-8 rounded-2xl border-2 border-slate-200 bg-white hover:border-slate-300 hover:shadow-lg transition-all duration-300"
+          ? "relative p-8 rounded-xl border-2 border-slate-900 bg-slate-50 md:scale-[1.02] z-10 transition-all duration-300"
+          : "relative p-8 rounded-xl border border-slate-200 bg-white hover:border-slate-300 transition-all duration-300"
       }
     >
       {highlighted && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-amber-500 text-slate-950 text-sm font-semibold rounded-full">
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-slate-900 text-white text-sm font-semibold rounded-full">
           Más popular
         </div>
       )}
@@ -32,7 +32,7 @@ export default function PlanCard(props: PlanCardProps) {
         {features.map((feature, i) => (
           <li key={i} className="flex items-center gap-2 text-slate-600">
             <svg
-              className="w-5 h-5 text-amber-500 flex-shrink-0"
+              className="w-5 h-5 text-slate-900 flex-shrink-0"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -53,8 +53,8 @@ export default function PlanCard(props: PlanCardProps) {
         onClick={onSelectPlan ?? (() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" }))}
         className={
           highlighted
-            ? "block w-full py-3 text-center font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 transition-all duration-300"
-            : "block w-full py-3 text-center font-semibold rounded-lg bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300"
+            ? "block w-full py-3 text-center font-semibold rounded-lg bg-slate-900 hover:bg-slate-800 text-white transition-colors duration-200"
+            : "block w-full py-3 text-center font-semibold rounded-lg border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition-colors duration-200"
         }
       >
         Elegir plan

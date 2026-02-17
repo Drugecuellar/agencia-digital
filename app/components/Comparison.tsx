@@ -49,7 +49,7 @@ export default function Comparison() {
             <thead>
               <tr className="bg-slate-50 border-b border-slate-200">
                 <th className="px-6 py-4 font-semibold text-slate-900">Aspecto</th>
-                <th className="px-6 py-4 font-semibold text-amber-600 bg-amber-50/50">
+                <th className="px-6 py-4 font-semibold text-slate-900 bg-slate-50">
                   Ruge Digital
                 </th>
                 <th className="px-6 py-4 font-semibold text-slate-500">Otras opciones</th>
@@ -69,7 +69,7 @@ export default function Comparison() {
                   <td className="px-6 py-4 text-slate-700">
                     <span className="flex items-center gap-2">
                       <svg
-                        className="w-5 h-5 text-amber-500 flex-shrink-0"
+                        className="w-5 h-5 text-slate-900 flex-shrink-0"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"

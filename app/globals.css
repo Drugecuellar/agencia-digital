@@ -2,12 +2,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a2e;
-  --primary: #7c3aed;
-  --primary-light: #a78bfa;
-  --secondary: #06b6d4;
-  --accent: #ec4899;
-  --accent-light: #f472b6;
+  --foreground: #0f172a;
+  --primary: #0f172a;
+  --primary-light: #334155;
 }
 
 @theme inline {
