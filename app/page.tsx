@@ -6,11 +6,13 @@ import Comparison from "./components/Comparison";
 import Contact from "./components/Contact";
 import WhatsAppButton from "./components/WhatsAppButton";
 
-<h1>Nuevo cambio en rama feature</h1>
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
+      <h1 className="text-3xl font-bold text-center py-6">
+        Nuevo cambio en rama feature
+      </h1>
       <Hero />
       <Services />
       <Pricing />
