@@ -47,7 +47,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="/planes"
-            className="hidden rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-800 md:inline-flex"
+            className="hidden rounded-full bg-gray-500 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-600 md:inline-flex"
           >
             Log in
           </Link>
@@ -86,7 +86,7 @@ export default function Header() {
             <Link
               href="/planes"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-lg bg-slate-900 py-2.5 text-center text-sm font-semibold text-white"
+              className="mt-2 rounded-full bg-gray-500 py-2.5 text-center text-sm font-semibold text-white hover:bg-gray-600"
             >
               Log in
             </Link>
