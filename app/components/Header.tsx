@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const nav = [
@@ -19,8 +20,15 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Link
           href="/"
-          className="text-xl font-bold tracking-tight text-slate-900 transition-colors hover:text-slate-700"
+          className="flex items-center gap-2 text-xl font-bold tracking-tight text-slate-900 transition-colors hover:text-slate-700"
         >
+          <Image
+            src="/malamute-logo.png"
+            alt="Ruge Digital - Alaskan Malamute"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-full object-cover"
+          />
           Ruge Digital
         </Link>
 
