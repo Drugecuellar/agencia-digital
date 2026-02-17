@@ -7,7 +7,7 @@ export default function Hero() {
         <p className="text-sky-300/90 text-sm font-medium uppercase tracking-[0.2em] mb-6">
           Sitios web
         </p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-red-800 mb-6 leading-[1.1] tracking-tight">
           Líderes en diseño web
         </h1>
         <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
