@@ -29,7 +29,7 @@ export default function Header() {
             height={36}
             className="h-9 w-9 rounded-full object-cover"
           />
-          Ruge Digital
+          RC-Digital
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -49,7 +49,7 @@ export default function Header() {
             href="/planes"
             className="hidden rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-slate-800 md:inline-flex"
           >
-            Empezar
+            Log in
           </Link>
           <button
             type="button"
@@ -88,7 +88,7 @@ export default function Header() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-lg bg-slate-900 py-2.5 text-center text-sm font-semibold text-white"
             >
-              Empezar
+              Log in
             </Link>
           </nav>
         </div>
